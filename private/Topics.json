@@ -1,0 +1,21 @@
+{
+  "Algebra 1":{
+    "topics": ["Expressions", "Linear Equations", "Functions", "Inequalities", "Systems of Equations and Inequalities", "Exponents", "Quadratics", "Radicals", "Rational Functions", "Statistics and Probability"]
+  },
+
+  "Algebra 2":{
+    "topics": ["Linear Equations", "Functions", "System of Equations and Inequalities", "Quadratic Functions", "Polynomial Functions", "Inverse Functions", "Radical Functions", "Exponential Functions", "Logarithmic Functions", "Rational Functions", "Conic Sections", "Sequences", "Series", "Statistics and Probability", "Trigonometric Functions"]
+  },
+
+  "Geometry/Trig":{
+    "topics": ["Points", "Lines", "Planes", "Distance", "Angles", "Shapes", "Proofs", "Parallel and Perpendicular Lines", "Congruent Triangles", "Relationships in Triangles", "Quadrilaterals", "Proportions and Similarity", "Right Angles/Trig", "Transformations and Symmetry", "Circles", "Areas of Polygons and Circles", "Surface Area and Volume"]
+  },
+
+  "Precalculus":{
+    "topics": ["Common Functions", "Function Relations", "Transformations", "Power Functions", "Parametric Relations", "Rational Zeros Theorem", "Dividing Polynomials", "Exponential Functions", "Logarithmic Functions", "Trigonometric Functions", "Proofs Involving Trigonometry", "Applications of Trigonometry", "Matrices", "Vectors", "Limits"]
+  },
+
+  "Calculus":{
+    "topics": ["Limits", "Continuity", "Slope at an Instant/Tangent Lines", "Derivatives", "Integrals", "Infinite Series"]
+  }
+}

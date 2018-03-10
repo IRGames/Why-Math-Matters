@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Saira+Condensed");
+
+/* CSS declarations go here */
+body {
+  font-family: 'Saira Condensed' !important;
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.container {
+  max-width: 75vw;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+
+header {
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 2vw 1.5vw 1.5vw 1.5vw;
+  position: relative;
+}
+
+h1 {
+  font-size: 12vh;
+  margin: 0;
+  margin-bottom: 1vh;
+  display: inline-block;
+  margin-right: 1em;
+  font-family: 'Indie Flower';
+}
+
+form {
+  margin-top: 1vw;
+  margin-bottom: -1vw;
+  position: relative;
+}
+
+.new-task input:focus{
+  outline: 0;
+}
+
+ul {
+  font-size:  5vh;
+  display: inline-block;
+}
+
+li {
+  padding:  1vw;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 1vw;
+  box-shadow: 1vw 1vh;
+  background-color: #edf3fc;
+}
+
+li:hover {
+  background-color: #becdd1;
+  border-radius: 1vw;
+  box-shadow: 0.8vw 0.8vh;
+}
+
+li .text {
+  font-size: 1.5vh;
+}
+
+li:active{
+  box-shadow: 0.5vw 0.5vh;
+}
+
+.sub-container{
+  padding-left:  2vw;
+}
+
+.submission{
+  padding: 2vw 0px 2vw 0px;
+}
+
+.courses{
+  font-size: 10vh;
+}
+
+form{
+  width: 80vw;
+}
+
+textarea{
+  font-family: 'Indie Flower';
+  font-size: 5vh;
+  width:  55vw;
+  height:  15vh;
+  border-radius: 6vw;
+  border-width: 0.5vw;
+  padding: 2vw;
+  user-select: none;
+}
+
+textarea:focus{
+  background-color:  #f7f9fc;
+}
+
+div{
+  user-select: none;
+}
+
+p{
+  font-size: 6vh;
+  margin-left: 1vw;
+}
+
+button{
+  font-size: 6vh;
+  box-shadow: 0.5vw 0.5vh;
+  margin-left: 1vw;
+}
+
+button:active{
+  opacity: 0.6;
+}
