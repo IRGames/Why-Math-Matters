@@ -59,11 +59,9 @@ export default class Course extends Component {
       <li onClick = {this.handleClick}>
       {this.props.name}
       </li>
-      <div className = 'sub-container'>
       <ul>
       {this.expandWithTransition()}
       </ul>
-      </div>
       </div>
     );
   }

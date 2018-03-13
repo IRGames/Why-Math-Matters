@@ -1,5 +1,3 @@
-
-
 duration = 300;
 
 defaultStyle = {
@@ -7,7 +5,6 @@ defaultStyle = {
   transitionProperty: 'opacity, transform',
   opacity: 0,
   padding: 20,
-  display: 'inline-block',
 }
 
 transitionStyles = {

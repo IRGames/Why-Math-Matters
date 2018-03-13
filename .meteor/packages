@@ -24,3 +24,6 @@ email
 accounts-ui
 accounts-facebook
 service-configuration
+cfs:standard-packages
+cfs:gridfs
+cfs:filesystem

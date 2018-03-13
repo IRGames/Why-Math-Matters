@@ -1,5 +1,8 @@
 import { Meteor } from 'meteor/meteor';
 import '../imports/misc/Collection.js';
+import '../imports/misc/UserLikes.js';
+import GlobalVars from '../imports/misc/GlobalVars.js';
+
 
 var smtp = {
   username: 'postmaster@sandboxd8bf6d97361f499c9553291711102f50.mailgun.org',
@@ -31,7 +34,6 @@ Meteor.methods({
     });
   },
 });
-
 
 ServiceConfiguration.configurations.remove({
     service: "facebook"
