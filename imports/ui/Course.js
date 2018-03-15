@@ -14,6 +14,9 @@ export default class Course extends Component {
       topicsList: []
     };
 
+
+    console.log('working');
+
     if(this.state.topicsList.length == 0){
       Meteor.call('getTopics',(err,res) => this.setState({topicsList:res[this.props.name].topics}))
     }

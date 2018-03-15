@@ -49,23 +49,6 @@ export default class Example extends Component {
         alert("please log in!");
       }
 
-
-/*
-Insert a New Document if No Match Exists
-The following update sets the upsert option to true so that update() creates a new document in the books collection if no document matches the <query> parameter:
-
-db.books.update(
-   { item: "ZZZ135" },
-   {
-     item: "ZZZ135",
-     stock: 5,
-     tags: [ "database" ]
-   },
-   { upsert: true }
-)
-*/
-
-
       function increaseVote(){
         UserLikes.update({"_id" : userVote._id},{$inc :{"votes": 1}});
         Collections.update({"_id" : objCollectionsID}, {$inc :{"votes": 1}});
