@@ -19,26 +19,9 @@ window.fbAsyncInit = function() {
 
 };
 
-(function(d, s, id){
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk.js";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-
-Template.login.events({
-    'click button.log-in'(event) {
-        event.preventDefault();
-        Meteor.loginWithFacebook({requestPermissions: ['public_profile', 'email']}, function(err){
-            if (err) {
-                console.log('Handle errors here: ', err);
-            }
-        });
-    },
-    'click button.log-out'(event) {
-        event.preventDefault();
-        Meteor.logout();
-    }
-});
+function checkLoginState() {
+  console.log('check login called');
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
