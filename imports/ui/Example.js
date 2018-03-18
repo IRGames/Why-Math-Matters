@@ -83,8 +83,8 @@ export default class Example extends Component {
       {this.props.text}
       <br />
       <img src = "down.png" className = 'smallIcons' onClick = {() => this.handleClick(false)}/>
-      <img src = "up.png" className = 'smallIcons' onClick = {() => this.handleClick(true)}/>
       {this.state.votes}
+      <img src = "up.png" className = 'smallIcons' onClick = {() => this.handleClick(true)}/>
       </div>
     );
   }

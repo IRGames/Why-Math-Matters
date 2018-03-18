@@ -1,14 +1,14 @@
 {
   "Algebra 1":{
-    "topics": ["Expressions", "Linear Equations", "Functions", "Inequalities", "Systems of Equations and Inequalities", "Exponents", "Quadratics", "Radicals", "Rational Functions", "Statistics and Probability"]
+    "topics": ["Expressions", "Linear Equations", "Functions", "Inequalities", "Systems of Equations", "Systems of Inequalities", "Exponents", "Quadratics", "Radicals", "Rational Functions", "Statistics and Probability"]
   },
 
   "Algebra 2":{
-    "topics": ["Linear Equations", "Functions", "System of Equations and Inequalities", "Quadratic Functions", "Polynomial Functions", "Inverse Functions", "Radical Functions", "Exponential Functions", "Logarithmic Functions", "Rational Functions", "Conic Sections", "Sequences", "Series", "Statistics and Probability", "Trigonometric Functions"]
+    "topics": ["Linear Equations", "Functions", "Systems of Equations", "Systems of Inequalities", "Quadratic Functions", "Polynomial Functions", "Inverse Functions", "Radical Functions", "Exponential Functions", "Logarithmic Functions", "Rational Functions", "Conic Sections", "Sequences", "Series", "Statistics and Probability", "Trigonometric Functions"]
   },
 
   "Geometry/Trig":{
-    "topics": ["Points", "Lines", "Planes", "Distance", "Angles", "Shapes", "Proofs", "Parallel and Perpendicular Lines", "Congruent Triangles", "Relationships in Triangles", "Quadrilaterals", "Proportions and Similarity", "Right Angles/Trig", "Transformations and Symmetry", "Circles", "Areas of Polygons and Circles", "Surface Area and Volume"]
+    "topics": ["Points", "Lines", "Planes", "Distance", "Angles", "Shapes", "Proofs", "Parallel and Perpendicular Lines", "Congruent Triangles", "Relationships in Triangles", "Quadrilaterals", "Proportions and Similarity", "Trigonometry", "Transformations and Symmetry", "Circles", "Areas of Polygons and Circles", "Surface Area and Volume"]
   },
 
   "Precalculus":{

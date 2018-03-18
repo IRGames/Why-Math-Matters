@@ -106,7 +106,6 @@ export default class Topic extends Component {
     displayAllExamples(){
       return (
         Collections.find({name: this.props.name, approved: true}, { sort: { votes: -1 } }).map( function(obj, index) {
-          console.log('objID being passed is ' + obj._id);
           return(
             <div className = 'example' key = {index}>
             <Example src = {obj.src} text = {obj.text} objID = {obj._id}/>

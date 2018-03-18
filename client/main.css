@@ -21,78 +21,57 @@ body {
 header {
   background: #d2edf4;
   background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
-  padding: 2vw 1.5vw 1.5vw 1.5vw;
+  padding: 3% 1.5% 1.5% 3%;
   position: relative;
 }
 
 h1 {
-  font-size: 12vh;
+  font-size: 300%;
   margin: 0;
-  margin-bottom: 1vh;
+  margin-bottom: 1em;
   display: inline-block;
   margin-right: 1em;
-  font-family: 'Indie Flower';
 }
 
 form {
-  margin-top: 1vw;
-  margin-bottom: -1vw;
+  margin-top: 1em;
+  margin-bottom: -1em;
   position: relative;
+  width: 95%;
 }
 
 ul {
-  font-size:  5vh;
+  font-size:  70%;
   display: block;
 }
 
 li {
-  padding:  1vw;
+  padding:  0.5em;
   cursor: pointer;
   display: inline-block;
-  border-radius: 1vw;
-  box-shadow: 1vw 1vh;
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.2em;
   background-color: #edf3fc;
+  margin: 0.1em 0 0.3em 0;
 }
 
 li:hover {
   background-color: #becdd1;
-  border-radius: 1vw;
-  box-shadow: 0.8vw 0.8vh;
-}
-
-li.text {
-  font-size: 1.5vh;
+  border-radius: 0.8em;
+  box-shadow: 0.15em 0.15em;
 }
 
 li:active{
-  box-shadow: 0.5vw 0.5vh;
-}
-
-img{
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-img:hover {
-  opacity: 1;
-}
-
-img:active{
-  opacity: 0.5;
-}
-
-form{
-  width: 80vw;
+  box-shadow: 0.1em 0.1em;
 }
 
 textarea{
-  font-family: 'Indie Flower';
-  font-size: 5vh;
-  width:  55vw;
-  height:  15vh;
-  border-radius: 6vw;
-  border-width: 0.5vw;
-  padding: 2vw;
+  font-size: 100%;
+  width:  100%;
+  height:  4em;
+  border-radius: 1em;
+  border-width: 0.2em;
+  padding: 0.4em;
   user-select: none;
 }
 
@@ -105,14 +84,14 @@ div{
 }
 
 p{
-  font-size: 6vh;
-  margin-left: 1vw;
+  font-size: 200%;
+  margin-left: 2%;
 }
 
 button{
-  font-size: 6vh;
-  box-shadow: 0.5vw 0.5vh;
-  margin-left: 1vw;
+  font-size: 100%;
+  box-shadow: 0.2em 0.2em;
+  border-radius: 0.9em;
 }
 
 button:active{
@@ -124,46 +103,55 @@ img{
   max-height:100%;
 }
 
+img:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+img:active{
+  opacity: 0.6;
+}
+
 input{
-  width:  60vw;
-  font-size:  3vh;
+  width:  100%;
+  font-size:  70%;
 }
 
 .container {
-  max-width: 75vw;
+  max-width: 90%;
   margin: 0 auto;
   min-height: 100%;
   background: white;
 }
 
 .courses{
-  font-size: 10vh;
+  font-size: 200%;
   display: block;
 }
 
 .helper{
   display: block;
 }
-
+/*
 .sub-container{
-  padding-left:  2vw;
+  padding-left: 30em;
   display: block;
 }
-
+*/
 .submission{
-  padding: 2vw 0px 2vw 0px;
+  padding: 0.3em 0px 0.3em 0px;
   display: block;
 }
 
 .example{
   display: block;
   background-color: #e5edf9;
-  padding:  10px;
-  margin: 5px;
+  padding:  1em;
+  margin: 0.3em;
 }
 
 .smallIcons{
-  margin-left: 2vw;
-  length: 3vh;
-  width: 3vw;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  width: 1em;
 }
