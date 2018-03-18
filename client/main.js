@@ -9,19 +9,11 @@ Meteor.startup(() => {
 
 window.fbAsyncInit = function() {
   FB.init({
-    appId      : '1581525701943620',
+    appId      : '2410241845668819',
     cookie     : true,
     xfbml      : true,
     version    : 'v2.10'
   });
 
   FB.AppEvents.logPageView();
-
 };
-
-function checkLoginState() {
-  console.log('check login called');
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-}
