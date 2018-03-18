@@ -75,11 +75,9 @@ export default class Example extends Component {
   }
 
   setNewLines(){
-    console.log(this.props.text.split("\n"));
     var butts = this.props.text.split("\n");
     return (
       butts.map(function (bla){
-        console.log('running');
         return <div>{bla}<br/></div>;
       })
     );
