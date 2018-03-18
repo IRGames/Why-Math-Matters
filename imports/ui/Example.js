@@ -74,13 +74,23 @@ export default class Example extends Component {
     this.setState({votes: Collections.findOne( {"_id" :objCollectionsID}).votes,});
   }
 
+  setNewLines(){
+    console.log(this.props.text.split("\n"));
+    var butts = this.props.text.split("\n");
+    return (
+      butts.map(function (bla){
+        console.log('running');
+        return <div>{bla}<br/></div>;
+      })
+    );
+  }
 
   render() {
     return(
       <div>
       <img src = {this.props.src} alt = "Image not available"/>
       <br />
-      {this.props.text}
+      {this.setNewLines()}
       <br />
       <img src = "down.png" className = 'smallIcons' onClick = {() => this.handleClick(false)}/>
       {this.state.votes}
