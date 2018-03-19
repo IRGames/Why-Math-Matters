@@ -5,7 +5,7 @@ import GlobalVars from '../imports/misc/GlobalVars.js';
 
 var smtp = {
   username: 'postmaster@sandboxd8bf6d97361f499c9553291711102f50.mailgun.org',
-  password: 'fe24d4a92e9fc5bed2186b7f48abcbfa-2b4c5a6c-3a6e1e94',
+  password: '2',
   server: 'smtp.mailgun.org',
   port: 587
 };
@@ -40,6 +40,6 @@ ServiceConfiguration.configurations.remove({
 
 ServiceConfiguration.configurations.insert({
     service: "facebook",
-    appId: '2410241845668819',
-    secret: '5fb2c201544b2dd341ab34e151b3cfe5'
+    appId: '2',
+    secret: '2'
 });
