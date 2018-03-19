@@ -9,7 +9,7 @@ Meteor.startup(() => {
 
 window.fbAsyncInit = function() {
   FB.init({
-    appId      : '2410241845668819',
+    appId      : 2,
     cookie     : true,
     xfbml      : true,
     version    : 'v2.10'
