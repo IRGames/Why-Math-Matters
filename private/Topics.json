@@ -1,10 +1,10 @@
 {
   "Algebra 1":{
-    "topics": ["Expressions", "Linear Equations", "Functions", "Inequalities", "Systems of Equations", "Systems of Inequalities", "Exponents", "Quadratics", "Radicals", "Rational Functions", "Statistics and Probability"]
+    "topics": ["Expressions", "Linear Equations", "Functions", "Inequalities", "Systems of Equations", "Systems of Inequalities", "Exponents", "Quadratics", "Imaginary Numbers", "Radicals", "Rational Functions", "Statistics and Probability"]
   },
 
   "Algebra 2":{
-    "topics": ["Linear Equations", "Functions", "Systems of Equations", "Systems of Inequalities", "Quadratic Functions", "Polynomial Functions", "Inverse Functions", "Radical Functions", "Exponential Functions", "Logarithmic Functions", "Rational Functions", "Conic Sections", "Sequences", "Series", "Statistics and Probability", "Trigonometric Functions"]
+    "topics": ["Linear Equations", "Functions", "Systems of Equations", "Systems of Inequalities", "Quadratic Functions", "Imaginary Numbers", "Polynomial Functions", "Inverse Functions", "Radical Functions", "Exponential Functions", "Logarithmic Functions", "Rational Functions", "Conic Sections", "Sequences", "Series", "Statistics and Probability", "Trigonometric Functions"]
   },
 
   "Geometry/Trig":{
