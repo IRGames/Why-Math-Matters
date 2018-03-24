@@ -22,6 +22,35 @@ export default class Topic extends Component {
 
   handleSubmit(event){
     event.preventDefault();
+
+    console.log(idToken);
+
+    var d = new Date();
+    d = d.toString();
+
+    if(idToken == ''){
+      alert("Please sign in before posting!")
+    }else{
+      if(Collections.find({author: idToken}).count() < 4){
+        Collections.insert(
+          {
+            name: this.props.name,
+            text: this.state.textInputValue,
+            src: this.state.linkInputValue,
+            author: idToken,
+            date: d,
+            votes: 0,
+            approved: false,
+          });
+          alert('Thanks for your submission!  Your example will be reviewed.');
+        }else{
+          alert('In order to prevent spam, each user is limited to four contributions.');
+        }
+    }
+
+
+
+    /*
     var name1 = this.props.name;
     var text1 = this.state.textInputValue;
     var link1 = this.state.linkInputValue;
@@ -43,13 +72,14 @@ export default class Topic extends Component {
             });
             alert('Thanks for your submission!  Your example will be reviewed.');
           }else{
-            alert('In order to prevent spam, each user is limited to three contributions.');
+            alert('In order to prevent spam, each user is limited to four contributions.');
           }
           //Meteor.call('sendEmail', this.state.inputValue);
         }else{
           alert('You must be logged into Facebook to submit new examples!');
         }
       });
+      */
     }
 
     updateTextInputValue(evt) {

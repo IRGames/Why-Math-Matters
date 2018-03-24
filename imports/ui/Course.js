@@ -3,7 +3,6 @@ import Topic from './Topic.js';
 import { Transition } from 'react-transition-group';
 import GlobalVars from '../misc/GlobalVars.js';
 
-// App component - represents the whole app
 export default class Course extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +12,7 @@ export default class Course extends Component {
       collapsed: true,
       topicsList: []
     };
-    
+
     if(this.state.topicsList.length == 0){
       Meteor.call('getTopics',(err,res) => this.setState({topicsList:res[this.props.name].topics}))
     }
