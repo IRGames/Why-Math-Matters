@@ -24,10 +24,8 @@ export default class Example extends Component {
 
     var objCollectionsID = this.props.objID;
 
-    FB.getLoginStatus(function(response) {
-      //Is there even a facebook user connected?  If not, alert the user
-      if(response.status==='connected'){
-        var userVote = UserLikes.findOne({"user": response.authResponse.userID, "id": objCollectionsID});
+      if(idToken !=''){
+        var userVote = UserLikes.findOne({"user": idToken, "id": objCollectionsID});
         //If there's already a userVote, try to update the entry
         if(userVote){
           //If they haven't upvoted yet, let 'em
@@ -66,10 +64,9 @@ export default class Example extends Component {
         }else{
           increment = -1;
         }
-        UserLikes.insert({user: response.authResponse.userID, id: objCollectionsID, votes: increment,});
+        UserLikes.insert({user: idToken, id: objCollectionsID, votes: increment,});
         Collections.update({"_id" : objCollectionsID}, {$inc :{"votes": increment}});
       }
-    });//Close FB.getLoginStatus
 
     this.setState({votes: Collections.findOne( {"_id" :objCollectionsID}).votes,});
   }

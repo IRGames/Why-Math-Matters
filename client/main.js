@@ -7,22 +7,6 @@ Meteor.startup(() => {
   render(<App />, document.getElementById('render-target'));
 });
 
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=2410241845668819&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-function checkLoginState() {
-  console.log('check login called');
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-}
-
-
 function onSignIn(googleUser) {
   console.log('onSignIn google user called');
   // Useful data for your client-side scripts:
@@ -38,14 +22,3 @@ function onSignIn(googleUser) {
   var id_token = googleUser.getAuthResponse().id_token;
   console.log("ID Token: " + id_token);
 }
-
-window.fbAsyncInit = function() {
-  FB.init({
-    appId      : process.env.facebook_app_id,
-    cookie     : true,
-    xfbml      : true,
-    version    : 'v2.10'
-  });
-
-  FB.AppEvents.logPageView();
-};

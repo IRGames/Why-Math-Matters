@@ -14,7 +14,7 @@
   </script>
   <span class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></span>
   <a href="#" onclick="signOut();" class = "link">Sign out</a>
-<script>
+  <script>
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
@@ -23,5 +23,5 @@
     idToken = '';
   }
 </script>
-  <div id="render-target"></div>
+<div id="render-target"></div>
 </body>
