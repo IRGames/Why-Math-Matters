@@ -30,52 +30,52 @@ export default class Example extends Component {
         if(userVote){
           //If they haven't upvoted yet, let 'em
           if(isPos && userVote.votes < 1){
-            increaseVote();
+            this.increaseVote(userVote, objCollectionsID);
           }//Or, if they haven't downvoted yet, let 'em
           else if (!isPos && userVote.votes > -1){
-            decreaseVote();
+            this.decreaseVote(userVote, objCollectionsID);
           }
           else{
             alert("Either one thumbs up or one thumbs down, please!");
           }
         }
         else{
-          createNewUserLikesEntry();
+          this.createNewUserLikesEntry(userVote, objCollectionsID);
         }
       }//Close the "connected" conditional
       else{
         alert("please log in!");
       }
 
-      function increaseVote(){
-        UserLikes.update({"_id" : userVote._id},{$inc :{"votes": 1}});
-        Collections.update({"_id" : objCollectionsID}, {$inc :{"votes": 1}});
-      }
-
-      function decreaseVote(){
-        UserLikes.update({"_id" : userVote._id},{$inc :{"votes": -1}});
-        Collections.update({"_id" : objCollectionsID}, {$inc :{"votes": -1}});
-      }
-
-      function createNewUserLikesEntry(){
-        var increment = 0;
-        if(isPos){
-          increment = 1;
-        }else{
-          increment = -1;
-        }
-        UserLikes.insert({user: idToken, id: objCollectionsID, votes: increment,});
-        Collections.update({"_id" : objCollectionsID}, {$inc :{"votes": increment}});
-      }
-
     this.setState({votes: Collections.findOne( {"_id" :objCollectionsID}).votes,});
   }
 
+  increaseVote(userVote, objCollectionsID){
+    UserLikes.update({"_id" : userVote._id},{$inc :{"votes": 1}});
+    Collections.update({"_id" : objCollectionsID}, {$inc :{"votes": 1}});
+  }
+
+  decreaseVote(userVote, objCollectionsID){
+    UserLikes.update({"_id" : userVote._id},{$inc :{"votes": -1}});
+    Collections.update({"_id" : objCollectionsID}, {$inc :{"votes": -1}});
+  }
+
+  createNewUserLikesEntry(userVote, objCollectionsID){
+    var increment = 0;
+    if(isPos){
+      increment = 1;
+    }else{
+      increment = -1;
+    }
+    UserLikes.insert({user: idToken, id: objCollectionsID, votes: increment,});
+    Collections.update({"_id" : objCollectionsID}, {$inc :{"votes": increment}});
+  }
+
   setNewLines(){
-    var butts = this.props.text.split("\n");
+    var text = this.props.text.split("\n");
     return (
-      butts.map(function (bla){
-        return <div>{bla}<br/></div>;
+      text.map(function (paragraph, index){
+        return <div key = {index}>{paragraph}<br/></div>;
       })
     );
   }
